@@ -16,7 +16,9 @@
             <a class="active" href="#Home">Home</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
+            <a href="#Slideshow">Slideshow</a>
+            <!--Open and close contact form-->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
 
         <!--Breaks inserted to add space between navbar and the first heading-->
@@ -50,6 +52,61 @@
                 </p>
             </strong>
         </div>
+        <!--Slideshow Section-->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!--Slide 1 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="" alt="MeLyssa Stewart Photo">
+                        <div class="text">I would love to help you with your Project!</div>
+                    </div>
+                <!--Slide 2 of 6-->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="./Images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS Logos">
+                    <div class="text">I am a full-stack software developer, <br> trained in: <br>
+                        HTML, CSS, and JavaScript,</div>
+                </div>
+            <!--slide 3 of 6-->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="./Images/Python.png" alt="Python logo">
+                <div class="text">the popular programming language Python,</div>
+            </div>
+            <!--slide 4 of 6-->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="./Images/C_Sharp_and_Dot_NET.png" alt="C# Logo">
+                <div class="text">C#, .NET, Framework, ASP.NET, MVC</div>
+            </div>
+            <!--slide 5 of 6-->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="./Images/SQL_and_Database.jpg" alt="SQL Logo">
+                <div class="text">Back end development, databases and SQL.</div>
+            </div>
+            <!--Slide 6 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="./Images/Doc.jpeg" alt="My Mini Aussie Doc">
+                <div class="text"> <a class="white-text contact"
+                    onclick="openForm()"> Contact me!
+                    </a></div>
+            </div>
+<!--previous and next buttons-->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            <br> <!--the space between slideshow and dots for navigation-->
+
+            <!--dots themselves-->
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+            </div>
+        </div>
+    </div>
+        </div>
 
         <!--About section-->
         <div class="Row" id="About">
@@ -65,7 +122,7 @@
                     <br>
                     <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
                     <br>
-                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                    <br>I am a full-stack developer and would love to work with you on your project!
                 </p>
             </div>
         </div>
@@ -87,24 +144,23 @@
             </div>
         </div>
 
-        <!--Contact section-->
-        <div class="Row" id="Contact">
-            <!--Contact image, left column-->
-            <div class="Column_2 Column_tall">
-                <img src="./Images/contactme.webp" alt="Contact_Image">
-            </div>
+       
             <!--Contact form, right column-->
-            <div class="Column_1 Column_tall">
+            <div id="Contact">
+                <button onclick="openForm ()" class="Pop_Up_Button">CONTACT</button>
+                <div class="form-popup" id="myForm">
+                    <form action="https://formspree.io/f/mwkjwjpn" method="POST" class="form-container"> <!----></form>
+                </div>
                 <h1>Contact</h1>
-            
-                <form action="" method="POST"> 
-                    <label>Name:</label>
+
+                    <label for="name">Name:</label>
                         <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
+                    <label for="email">Email:</label>
                         <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
                     <label>Message:</label>
                         <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
+                        <button type="submit" class="btn">SUBMIT</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
             </div>
         </div>
@@ -116,5 +172,6 @@
                 <br>
             </p>
         </footer>
+        <script src="./portfolio.js"></script>
     </body>
 </html>
