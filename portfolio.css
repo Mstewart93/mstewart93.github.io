@@ -27,6 +27,10 @@ h1 {
     color: #1a1a1a; 
 }
 
+h2, ul, li {
+    text-align: center;
+    list-style-position: inside;
+}
 /* Heading 1 element hover effect */
 h1:hover {
     filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
@@ -88,6 +92,7 @@ img {
     display: block; /* By specifying block display we can ensure our images are able to be centered */
     margin-left: auto; /* In combination with "margin-right: auto" this centers all images */
     margin-right: auto;
+   
 }
 
 /* Image element hover effects */
