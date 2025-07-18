@@ -414,7 +414,7 @@ footer {
     padding: .93vw;
     margin: .6vw 0 .6vw 0;
     border: none;
-    background: gainsboro;
+    background: rgb(197, 173, 198);
     font-size: 1vw;
 
 }
@@ -433,21 +433,21 @@ button {
 
 button:hover, .form-container .btn:hover {
     color: white;
-    background-color: black;
+    background-color: #6d5070;
     transition-duration: 1s;
     -webkit-transition-duration: 1s;
     border-color: silver ;
 }
 
 .form-container .btn {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     border-color: black;
     margin-bottom: 1vh;
 }
 
 .form-container .cancel {
-    background-color: black;
+    background-color: #6d5070;
     color: white;
     border-color: gray;
 }
@@ -459,7 +459,7 @@ button:hover, .form-container .btn:hover {
 
 .form-container .cancel:hover {
     color: white;
-    background-color: darkred;
+    background-color: black;
     transition-duration: 1s;
     -webkit-transition-duration: 1s;
     border-color: black;
