@@ -433,21 +433,21 @@ button {
 
 button:hover, .form-container .btn:hover {
     color: white;
-    background-color: #6d5070;
+    background-color: black;
     transition-duration: 1s;
     -webkit-transition-duration: 1s;
     border-color: silver ;
 }
 
 .form-container .btn {
-    background-color: black;
+    background-color:  #49354b;
     color: white;
     border-color: black;
     margin-bottom: 1vh;
 }
 
 .form-container .cancel {
-    background-color: #6d5070;
+    background-color:  #6d5070;
     color: white;
     border-color: gray;
 }
@@ -458,8 +458,8 @@ button:hover, .form-container .btn:hover {
 
 
 .form-container .cancel:hover {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     transition-duration: 1s;
     -webkit-transition-duration: 1s;
     border-color: black;
