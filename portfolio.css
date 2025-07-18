@@ -375,7 +375,7 @@ footer {
     bottom: 1.75vw;
     right: 1.7vw;
     width: 25vw;
-    background-color: white;
+    background-color: rgb(197, 173, 198);
     color: black;
     border: solid black;
     cursor: pointer;
@@ -406,7 +406,7 @@ footer {
 .form-container {
     max-width: 49vw;
     padding: 1vw;
-    background-color: white;
+    background-color: #7c657e;
 }
 
 .form-container input [type=text] {
